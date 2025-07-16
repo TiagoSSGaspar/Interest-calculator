@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Juros por Período</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calculator-container">
+        <h1>Calculadora de Juros</h1>
+        
+        <div class="input-group">
+            <label for="principal">Valor Principal (R$)</label>
+            <input type="number" id="principal" placeholder="Ex: 1000">
+        </div>
+
+        <div class="input-group">
+            <label for="rate">Taxa de Juros (%)</label>
+            <input type="number" id="rate" placeholder="Ex: 1.5">
+        </div>
+
+        <div class="input-group">
+            <label for="rate-time-unit">Unidade de Tempo da Taxa</label>
+            <select id="rate-time-unit">
+                <option value="daily">Ao Dia</option>
+                <option value="monthly" selected>Ao Mês</option>
+                <option value="yearly">Ao Ano</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="start-date">Data de Início</label>
+            <input type="date" id="start-date">
+        </div>
+        
+        <div class="input-group">
+            <label for="end-date">Data de Fim</label>
+            <input type="date" id="end-date">
+        </div>
+
+        <div class="input-group">
+            <label for="interest-type">Tipo de Juro</label>
+            <select id="interest-type">
+                <option value="simple">Juros Simples</option>
+                <option value="compound">Juros Compostos</option>
+            </select>
+        </div>
+
+        <button id="calculate-btn">Calcular</button>
+
+        <div id="result" class="result-container">
+            </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
